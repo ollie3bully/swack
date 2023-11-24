@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/* main.jsp */
+.container {
+	width: 100%;
+	height: 100%;
+}
+.logout{
+	text-align:right;
+}
+
+.header {
+	display: flex;
+	background-color: #008080;
+	color: #C0C0C0;
+}
+
+.main {
+	display: flex;
+	width: 100%;
+	height: calc(100% - 40px);
+}
+
+.left {
+	overflow: auto;
+	width: 180px;
+	height: 100%;
+	background-color: #008080;
+	color: #C0C0C0;
+}
+
+.left h2 {
+	padding-left: 5px;
+}
+
+.left details {
+	margin-left: 5px;
+	margin-top: 10px;
+	color: #C0C0C0;
+}
+
+.left .list-name {
+	margin-left: 15px;
+	color: #C0C0C0;
+}
+
+.left .sanka {
+	 color: #C0C0C0;
+}
+
+.contents {
+	flex: 1;
+	position: relative;
+}
+
+.contents .join-member-button {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.contents h2 {
+	padding-left: 5px;
+	background-color: #008080;
+	color: #C0C0C0;
+}
+
+.contents-main {
+	overflow: auto;
+	height: calc(100% - 90px);
+	background-color: #FFFFFF;
+}
+
+.contents-main .log-area {
+	display: flex;
+}
+
+.contents-main .log-icon {
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.contents-main .log-icon img {
+	width: 50px;
+	border-radius: 25px;
+}
+
+.contents-main .log-box {
+	flex: 1;
+	margin: 5px;
+	padding: 5px;
+}
+
+.contents-main .log-name {
+	font-weight: bold;
+}
+
+.contents-main .log-time {
+	font-size: 0.8rem;
+	opacity: 0.5;
+}
+
+.contents-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.contents-footer .form-wrap {
+	display: flex;
+}
+
+.contents-footer .form-wrap input[type="text"] {
+	flex: 1;
+	padding: 10px 5px;
+}
+
+.contents-footer .form-wrap input[type="submit"] {
+	width: 50px;
+}
+
+.pika-box {
+	transition: background-color 2s; /* 1秒かけて背景色を元に戻す */
+}
+
+.highlight {
+	background-color: #ffdead; /* ピカッてした時の背景色 */
+	transition-duration: 0s; /* 即座に背景色を変える */
+}
+
+.loading {
+	width: 100vw;
+	height: 100vh;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.loading Img {
+	width: 100px;
+	position: absolute;
+	top: 40%;
+	left: 45%
+}
+
+.new {
+	display: block;
+	text-align: center;
+	background: linear-gradient(transparent 50%, #a8eaff 50%);
+}
+
+#overflow {
+  width: 100vw;  /* 横幅を画面いっぱいにする */
+  height: 100vh; /* 高さを画面いっぱいにする */
+  background-color: rgba(0,0,0,0.2); /* 背景を半透明の黒い背景にする */
+  position: absolute; /* 相対位置に指定 */
+  z-index: 10;        /* ウィンドウの全面に表示 */
+  display: none;      /* 初期は非表示 */
+}
+
+#overflow .conf {
+  background: #FFF;   /* 背景を白色に指定 */
+  padding: 20px;      /* 余白を20pxに指定 */
+  position: absolute; /* 装置位置に指定 */
+  top: 50%;           /* 上から50%の位置に配置 */
+  left: 50%;          /* 左から50%の位置に配置 */
+  transform: translate(-50%,-50%); /* コンテンツの半分だけ位置を戻して上下左右中央に配置 */
+}
+
+.btns {
+  text-align: right; /* 要素を右寄せにする */
+}
+.btns .ok {
+  /* okボタンの装飾を変えるなら書く */
+}

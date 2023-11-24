@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* logout.jsp */
+
+
+.container {
+	width: 90%;
+	max-width: 500px;
+	height: 100%;
+	margin: auto;
+}
+.container h1 {
+	margin-top: 260px;
+	font-size: 30px;
+	text-align: center;
+}
+.container h5 {
+	margin-top: 10px;
+	font-size: 15px;
+	text-align: right;
+}
